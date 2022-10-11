@@ -1,0 +1,9 @@
+
+.cabecalho__titulo {
+    font-size: 4.4rem;
+    font-weight: 200;
+
+    color: var(--cor-fonte-titulo);
+    
+    margin-bottom: .5rem;
+}
