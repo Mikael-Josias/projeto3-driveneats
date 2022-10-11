@@ -1,0 +1,9 @@
+
+.conteudo{
+
+    background-color: var(--background-conteudo);
+
+    padding: 3.1rem 0 0 1.9rem;
+
+    width: 100%;
+}

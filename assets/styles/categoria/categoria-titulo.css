@@ -1,0 +1,9 @@
+
+.categoria__titulo{
+    font-size: 2.6rem;
+    font-weight: 400;
+
+    color: var(--cor-fonte-categoria);
+
+    margin-bottom: 1.7rem;
+}

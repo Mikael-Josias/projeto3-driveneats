@@ -1,0 +1,10 @@
+
+.card_nome{
+    font-family: var(--fonte-secundaria);
+    font-size: 1.6rem;
+    font-weight: 700;
+
+    color: var(--cor-fonte-categoria);
+
+    margin-bottom: .8rem;
+}

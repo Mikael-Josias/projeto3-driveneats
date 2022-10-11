@@ -1,0 +1,10 @@
+
+.categoria__opcoes{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    overflow: scroll;
+
+    width: 100%;
+}
