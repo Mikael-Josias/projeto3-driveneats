@@ -1,0 +1,16 @@
+
+.rodape__pedir--inativo{
+    font-family: var(--fonte-secundaria);
+    font-size: 2rem;
+    font-weight: 400;
+
+    color: var(--cor-fonte-titulo);
+    background-color: var(--background-botao-inativo);
+
+    border-radius: 5rem;
+    border: none;
+
+    padding: 0 8rem;
+    height: 100%;
+    width: 36.4rem;
+}

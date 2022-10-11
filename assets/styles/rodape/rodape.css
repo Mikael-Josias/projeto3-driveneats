@@ -1,0 +1,16 @@
+
+.rodape{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: var(--background-card);
+
+    padding: 1.5rem 2.5rem;
+
+    height: 9.2rem;
+    width: 100%;
+
+    position: sticky;
+    bottom: 0;
+}
