@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+:root {
+    --fonte-principal: 'Righteous', cursive;
+    --fonte-secundaria: 'Roboto', sans-serif;
+
+    --background-cabecalho: #CF2B2B;
+    --background-conteudo: #E5E5E5;
+    --background-card: #FFF;
+    --background-botao-inativo: #CBCBCB;
+
+    --cor-fonte-titulo: #FFF;
+    --cor-fonte-categoria: #333333;
+    --cor-fonte-descricao: #A6A6A6;
+    --cor-fonte-preco: #000;
+}
