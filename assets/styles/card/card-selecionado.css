@@ -1,0 +1,14 @@
+
+.card__selecionado--inativo, .card__selecionado--ativo{
+    position: absolute;
+    right: 1.5rem;
+    bottom: 1.4rem;
+}
+
+.card__selecionado--inativo{
+    display: none;
+}
+
+.card__selecionado--ativo{
+    display: inline;
+}
