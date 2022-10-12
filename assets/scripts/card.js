@@ -12,6 +12,8 @@ function selecionarComida(card){
 
     card.classList.add("card--selecionado");
     card.lastElementChild.classList.add("card__selecionado--ativo");
+
+    verificarSelecoes();
 }
 
 function desmarcarCard(card){

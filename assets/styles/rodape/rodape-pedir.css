@@ -1,5 +1,5 @@
 
-.rodape__pedir--inativo{
+.rodape__pedir--inativo, .rodape__pedir--ativo{
     font-family: var(--fonte-secundaria);
     font-size: 2rem;
     font-weight: 400;
@@ -13,4 +13,9 @@
     padding: 0 8rem;
     height: 100%;
     width: 36.4rem;
+}
+
+.rodape__pedir--ativo{
+    background-color: var(--borda-card-selecao);
+    cursor: pointer;
 }
