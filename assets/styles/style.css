@@ -31,3 +31,7 @@ html{
 div.hided{
     display: none;
 }
+
+div p.bolder{
+    font-weight: 700;
+}
