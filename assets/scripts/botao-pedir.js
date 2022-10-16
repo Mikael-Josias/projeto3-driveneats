@@ -6,6 +6,8 @@ var selecoes = 0;
 var clientName = "";
 var clientCep = "";
 
+var whatsappMessage = "";
+
 btnPedir.setAttribute("disabled", "disabled");
 
 function verificarSelecoes(){
@@ -21,27 +23,39 @@ function verificarSelecoes(){
     }
 }
 
-function fazerPedido(){
+function makeOrder(){
     askNameAndCep();
 
-    let prato = [selecoes[0].dataset.prato, selecoes[0].dataset.preco];
-    let bebida = [selecoes[1].dataset.bebida, selecoes[1].dataset.preco];
-    let sobremesa = [selecoes[2].dataset.sobremesa, selecoes[2].dataset.preco];
+    let dish = [selecoes[0].dataset.prato, selecoes[0].dataset.preco];
+    let drink = [selecoes[1].dataset.bebida, selecoes[1].dataset.preco];
+    let dessert = [selecoes[2].dataset.sobremesa, selecoes[2].dataset.preco];
 
-    let valorTotal = parseFloat(prato[1].replace(",", ".")) + parseFloat(bebida[1].replace(",", ".")) + parseFloat(sobremesa[1].replace(",", "."));
+    let totalValue = Math.round((parseFloat(dish[1].replace(",", ".")) 
+                        + parseFloat(drink[1].replace(",", ".")) 
+                        + parseFloat(dessert[1].replace(",", "."))) * 100) /100;
 
-    let mensagem = window.encodeURIComponent("Olá, gostaria de fazer o pedido:\n- Prato: " + prato[0] + "\n- Bebida: " + bebida[0] + "\n- Sobremesa: " + sobremesa[0] + "\nTotal: R$ " + valorTotal.toFixed(2));
+    let message = createMessage(dish[0], drink[0], dessert[0], totalValue);
 
-    window.open(`https://wa.me/${restaurantNumber}?text=${mensagem}`, "_blank");
+    window.open(`https://wa.me/${restaurantNumber}?text=${message}`, "_blank");
 }
 
 btnPedir.addEventListener("click", (e) => {
     
-    fazerPedido();
+    makeOrder();
     console.log("funcionou")
 })
 
 function askNameAndCep(){
     clientName = prompt("Preencha seu Nome:");
     clientCep = prompt("Preencha seu endereço:");
+}
+
+function createMessage(dish, drink, dessert, total){
+    whatsappMessage = `Olá, gostaria de fazer o pedido:
+                        \n- Prato: ${dish}
+                        \n- Bebida: ${drink}
+                        \n- Sobremesa: ${dessert}
+                        \nTotal: R$ ${total}`;
+
+    return window.encodeURIComponent(whatsappMessage);
 }
