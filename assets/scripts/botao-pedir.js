@@ -3,6 +3,9 @@ const restaurantNumber = "5511951598902";
 const btnPedir = document.querySelector("#btnPedir");
 var selecoes = 0;
 
+var clientName = "";
+var clientCep = "";
+
 btnPedir.setAttribute("disabled", "disabled");
 
 function verificarSelecoes(){
@@ -19,6 +22,8 @@ function verificarSelecoes(){
 }
 
 function fazerPedido(){
+    askNameAndCep();
+
     let prato = [selecoes[0].dataset.prato, selecoes[0].dataset.preco];
     let bebida = [selecoes[1].dataset.bebida, selecoes[1].dataset.preco];
     let sobremesa = [selecoes[2].dataset.sobremesa, selecoes[2].dataset.preco];
@@ -35,3 +40,8 @@ btnPedir.addEventListener("click", (e) => {
     fazerPedido();
     console.log("funcionou")
 })
+
+function askNameAndCep(){
+    clientName = prompt("Preencha seu Nome:");
+    clientCep = prompt("Preencha seu endereço:");
+}
