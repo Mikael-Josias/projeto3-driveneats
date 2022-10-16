@@ -1,0 +1,17 @@
+
+.popup__line{
+    display: flex;
+    justify-content: space-between;
+
+    width: 100%;
+}
+
+.popup__line p {
+    font-family: var(--fonte-secundaria);
+    font-size: 2.2rem;
+    font-weight: 400;
+
+    margin-bottom: 1.3rem;
+
+    color: white;
+}

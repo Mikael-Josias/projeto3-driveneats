@@ -28,6 +28,13 @@
     <link rel="stylesheet" href="./assets/styles/rodape/rodape.css"/>
     <link rel="stylesheet" href="./assets/styles/rodape/rodape-pedir.css"/>
 
+    <link rel="stylesheet" href="./assets/styles/dialog/confirmation-dialog.css"/>
+    <link rel="stylesheet" href="./assets/styles/dialog/popup.css"/>
+    <link rel="stylesheet" href="./assets/styles/dialog/popup-title.css"/>
+    <link rel="stylesheet" href="./assets/styles/dialog/popup-line.css"/>
+    <link rel="stylesheet" href="./assets/styles/dialog/popup-confirm.css"/>
+    <link rel="stylesheet" href="./assets/styles/dialog/popup-cancel.css"/>
+
     <title>Driven Eats</title>
 </head>
 <body>
@@ -243,6 +250,33 @@
 
             </div>
         </div>
+
+        <div class="confirmation-dialog hided">
+            <div class="popup" data-test="confirmation-dialog">
+                <p class="popup__title">Confirme seu pedido</p>
+
+                <div class="popup__line">
+                    <p data-food="dish">a</p>
+                    <p data-price="dish-price">1</p>
+                </div>
+                <div class="popup__line">
+                    <p data-food="drink">a</p>
+                    <p data-price="drink-price">1</p>
+                </div>
+                <div class="popup__line">
+                    <p data-food="dessert">a</p>
+                    <p data-price="dessert-price">1</p>
+                </div>
+
+                <div class="popup__line">
+                    <p class="bolder">TOTAL</p>
+                    <p class="bolder" data-price="total-price"></p>
+                </div>
+
+                <button class="popup__confirm">Tudo certo, pode pedir!</button>
+                <button class="popup__cancel">Cancelar</button>
+            </div>
+        </div>
     </main>
 
     <footer class="rodape">
@@ -250,6 +284,7 @@
     </footer>
 
     <script type="text/javascript" src="./assets/scripts/card.js"></script>
+    <script type="text/javascript" src="./assets/scripts/dialog.js"></script>
     <script type="text/javascript" src="./assets/scripts/botao-pedir.js"></script>
 </body>
 </html>

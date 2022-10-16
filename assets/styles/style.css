@@ -9,6 +9,7 @@
     --background-conteudo: #E5E5E5;
     --background-card: #FFF;
     --background-botao-inativo: #CBCBCB;
+    --background-popup: #50D074;
 
     --borda-card-selecao: #32B72F;
     
@@ -25,4 +26,8 @@
 html{
     font-family: var(--fonte-principal);
     font-size: 10px;
+}
+
+div.hided{
+    display: none;
 }

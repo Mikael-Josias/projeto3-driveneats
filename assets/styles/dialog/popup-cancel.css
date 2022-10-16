@@ -1,0 +1,16 @@
+
+.popup__cancel{
+    font-family: var(--fonte-secundaria);
+    font-size: 2.2rem;
+    font-weight: 700;
+
+    color: white;
+    background-color: var(--background-popup);
+
+    border: none;
+
+    height: 5.2rem;
+    width: 100%;
+
+    cursor: pointer;
+}

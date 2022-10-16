@@ -1,0 +1,19 @@
+
+.popup__confirm{
+    height: 5.2rem;
+    width: 100%;
+
+    font-family: var(--fonte-secundaria);
+    font-size: 2.2rem;
+    font-weight: 700;
+
+    border: none;
+    border-radius: 10rem;
+
+    margin-top: 1.1rem;
+
+    color: var(--background-popup);
+    background-color: white;
+
+    cursor: pointer;
+}
