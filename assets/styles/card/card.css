@@ -20,4 +20,5 @@
 
 .card--selecionado{
     border: .5rem solid var(--borda-card-selecao);
+    padding: 1.8rem .9rem 1.3rem .9rem;
 }
